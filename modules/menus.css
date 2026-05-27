@@ -1,0 +1,9 @@
+.menus .slice {
+    gap: 3rem;
+}
+
+@media (min-width: 1680px) {
+    .menus .slice {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,25 @@
+.photo-index {
+    background: url('../img/large_bibimbap.jpg') center center / cover;
+}
+
+.photo-menus {
+    background: url(../img/section_menu.jpg) center center / cover;
+}
+
+.photo {
+    height: 300px;
+    width: auto;
+    margin-top: 3rem;
+}
+
+@media (min-width: 700px) {
+    .photo {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .photo {
+    height: 600px;
+    }
+}

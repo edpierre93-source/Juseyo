@@ -1,0 +1,30 @@
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    transition: 0.3s;
+    padding: 0.5rem 1rem;
+    width: 200px;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.btn-fill {
+    background-color: var(--secondary);
+
+    &:hover {
+        background-color: var(--primary);
+    }
+}
+
+.btn-border {
+    &:hover {
+        background-color: var(--secondary);
+    }
+}
+
+.btn svg {
+    width: 20px;
+    height: auto;
+}

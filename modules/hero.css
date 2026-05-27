@@ -1,0 +1,105 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-body {
+    margin-bottom: 2rem;
+}
+
+
+.product {
+    width: 250px;
+    flex: none;
+    scroll-snap-align: center;
+}
+
+@media (min-width: 850px) {
+    .header-nav {
+        gap: 5rem;
+    }
+
+    .hero .container {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .hero-body p {
+        font-size: 4rem;
+    }
+
+    .slice {
+        gap: 3rem;
+    }
+
+    .product {
+        width: 500px;
+        height: auto;
+    }
+
+    .hero-body {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    }
+
+
+
+    /*!!! hero du MENU !!!*/
+
+
+
+    .menu-hero {
+        background: url(../img/large_bibimbap.jpg) center center / cover;
+        height: 300px;
+        width: auto;
+        display: flex;
+    }
+
+    .menu-hero-title {
+        background: #ffffff57;
+        font-size: 5rem;
+        font-weight: 700;
+        flex: 1;
+        text-align: center;
+        padding: 4rem;
+    }
+
+
+
+
+    /*!!! hero de la section A PROPOS !!!*/
+
+
+
+
+    .about-hero .body-section {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about-hero-description {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .about-hero-description .text-description-small {
+        max-width: 1000px;
+        align-self: center;
+    }
+
+    .storyboard {
+        background: var(--secondary);
+    }
+
+    @media (min-width: 1000px) {
+        .about-hero .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }

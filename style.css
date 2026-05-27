@@ -1,0 +1,44 @@
+@layer reset, base, modules, components;
+@import "../reset.css" layer(reset);
+@import "./base/typography.css" layer(base);
+@import "./base/color.css" layer(base);
+@import "./base/utilities.css" layer(base);
+@import "./components/button.css" layer(components);
+@import "./components/photo.css" layer(components);
+@import "./modules/header.css" layer(modules);
+@import "./modules/hero.css" layer(modules);
+@import "./modules/cards.css" layer(modules);
+@import "./modules/hours.css" layer(modules);
+@import "./modules/footer.css" layer(modules);
+@import "./modules/menus.css" layer(modules);
+@import "./modules/iframe.css" layer(modules);
+
+/*
+    1. Palette de couleurs :
+        ◦ Primaire : #3498db (bleu clair).
+        ◦ Secondaire : #2ecc71 (vert).
+        ◦ Couleurs d’accentuation : #e74c3c (rouge) et #f1c40f (jaune).
+    2. Polices recommandées :
+        ◦ Titre : Montserrat, sans-serif.
+        ◦ Texte : Roboto, sans-serif.
+*/
+
+:root {
+    --font-special: "Finger Paint";
+    --font-logo: "Reenie Beanie";
+    --font-title: 'Montserrat', sans-serif;
+    --font-main: 'Roboto', sans-serif;
+    --text-info: #0000009c;
+    --padding: 1rem;
+    --primary: #3498db;
+    --secondary: #2ecc71;
+    --back-dark: #313131;
+    --back-light: #fffce8;
+    --accent-primary: #e74c3c;
+    --accent-secondary: #f1c40f;
+}
+
+body {
+    font-family: var(--font-main);      
+    background: var(--back-light);
+}

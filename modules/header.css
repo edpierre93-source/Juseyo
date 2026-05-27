@@ -1,0 +1,54 @@
+.header {
+    background: var(--primary);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    display: none;
+    align-items: flex-end;
+    text-transform: uppercase;
+    gap: 1rem;
+    font-weight: 700;
+    font-size: 0.88rem;
+    letter-spacing: 1px;
+}
+
+.header-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-right a, svg {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+@media (min-width: 900px) {
+    .header-nav {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .header-nav {
+        display: flex;
+    }
+
+    .header .header-burger {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .header {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+    }
+}

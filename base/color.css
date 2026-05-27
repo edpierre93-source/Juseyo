@@ -1,0 +1,17 @@
+.mask {
+    color: #ffffff4d;
+    width: 100%;
+    height: 100%;
+}
+
+.background-primary {
+    background-color: var(--primary);
+}
+
+.background-secondary {
+    background-color: var(--secondary);
+}
+
+.background-light {
+    background-color: var(--back-light);
+}

@@ -1,0 +1,53 @@
+.background-img {
+    background: url('../img/restaurant.jpg') center center / cover;
+    height: 300px;
+    width: auto;
+}
+
+.hours-day {
+    display: grid;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.day-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.day {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hour {
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--text-info);
+    text-wrap: nowrap;
+}
+
+@media (min-width: 500px) {
+    .hour {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .background-img {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .background-img {
+    height: 600px;
+    }
+
+    .hours .container {
+        padding-inline: 5rem;
+    }
+}
