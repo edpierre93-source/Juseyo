@@ -11,7 +11,7 @@
 @import "./modules/hours.css" layer(modules);
 @import "./modules/footer.css" layer(modules);
 @import "./modules/menus.css" layer(modules);
-@import "./modules/iframe.css" layer(modules);
+@import "./modules/map.css" layer(modules);
 
 /*
     1. Palette de couleurs :

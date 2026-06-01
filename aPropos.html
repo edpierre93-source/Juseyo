@@ -65,17 +65,8 @@
         </div>
     </section>
 
-    <section class="iframe-body">
-        <div class="iframe-container">
-            <div class="map-fallback">
-                <h3>Impossible de charger la carte.</h3>
-                <p>Veuillez vérifier votre connexion.</p>
-            </div>
-            <div class="iframe is-loaded">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2704.552890925151!2d5.041459376867344!3d47.32307257116528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f29de8a87491e5%3A0xd3051b25df278390!2s11%20Rue%20Chaudronnerie%2C%2021000%20Dijon!5e0!3m2!1sfr!2sfr!4v1779268470111!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
+    <section class="map" id="map">
+        <gmp-map center="47.323188106948514, 5.044016235526838" zoom="15"></gmp-map>
     </section>
 
     <footer class="footer">
@@ -123,5 +114,9 @@
         </div>
         </div>
      </footer>
+    <script src="app.js" type ="module" defer></script>
+    <script src="libraries.js" type ="module" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlL9DJpLaSD6ZYZI0Aam5OXVXH-abMToU&callback=initMap&v=weekly&libraries=marker" type="module" defer>
+    </script>
 </body>
 </html>
