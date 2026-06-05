@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="../test.js" type="module"></script>
+    <script src="./animation.js" type="module"></script>
 </head>
 <body>
     <header class="header">
@@ -37,8 +37,8 @@
     <section class="hero">
         <div class="container">
             <div class="hero-body">
-                    <h1 class="title-section">Juseyo</h1>
-                    <p class="body-section">votre restaurant <br> coréen</p>
+                    <h1 class="title-section reveal-1">Juseyo</h1>
+                    <p class="body-section reveal-2">votre restaurant <br> coréen</p>
                 <button class="btn btn-fill btn-hover">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/>
                     </svg>
@@ -62,10 +62,10 @@
                     </svg>
                         Juseyo Dijon
                 </button>
-                <h2 class="text-title-dark">nos plats</h2>
-                <p class="text-description-big">à partager ou non</p>
+                <h2 class="text-title-dark reveal-2">nos plats</h2>
+                <p class="text-description-big reveal-3">à partager ou non</p>
             </div>
-            <article class="cards">
+            <article class="cards reveal-1">
                     <img src="img/mini_bibimbap.jpg" alt="miniature bibimbap" width="100px" height="100px">
                     <div class="card-body">
                         <div class="card-description">
@@ -76,7 +76,7 @@
                             <p class="card-recipe">riz, oeuf, carotte, epinard, champignon, courgette</p>
                     </div>
             </article>
-            <article class="cards">
+            <article class="cards reveal-2">
                     <img src="img/mini_bulgogi.jpg" alt="miniature bulgogi" width="100px" height="100px">
                     <div class="card-body">
                         <div class="card-description">
@@ -87,7 +87,7 @@
                             <p class="card-recipe">riz, viande marinée grillée</p>
                     </div>
             </article>
-            <article class="cards">
+            <article class="cards reveal-2">
                     <img src="img/mini_kimchi_jjigae.jpg" alt="miniature jjigae" width="100px" height="100px">
                     <div class="card-body">
                         <div class="card-description">
@@ -98,7 +98,7 @@
                             <p class="card-recipe">kimchi en bouillon, sauce pimentée</p>
                     </div>
             </article>
-            <article class="cards">
+            <article class="cards reveal-2">
                     <img src="img/mini_tteokbokki.jpg" alt="miniature tteokbokki" width="100px" height="100px">
                     <div class="card-body">
                         <div class="card-description">
@@ -109,7 +109,7 @@
                             <p class="card-recipe">pâte de riz, sauce pimentée</p>
                     </div>
             </article>
-            <article class="cards">
+            <article class="cards reveal-2">
                     <div><img src="img/mini_karage.jpg" alt="miniature poulet karage" width="100px" height="100px"></div>
                     <div class="card-body">
                         <div class="card-description">
@@ -126,45 +126,45 @@
     <section class="hours">
         <div class="background-img"></div>
         <div class="container">
-            <p class="title-section">Nos horaires</p>
-            <h2 class="body-section">Juseyo Dijon</h2>
+            <p class="title-section reveal-1">Nos horaires</p>
+            <h2 class="body-section reveal-2">Juseyo Dijon</h2>
             <button class="btn btn-fill btn-hover">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/>
                     </svg>
                     Juseyo Dijon
             </button>
             <div class="hours-day">
-                <div class="day-description">
+                <div class="day-description reveal-3">
                     <p class="day">Lundi</p>
                     <div class="dots"></div>
                     <p class="hour">Fermé</p>
                 </div>
-                <div class="day-description">
+                <div class="day-description reveal-3">
                     <p class="day">Mardi</p>
                     <div class="dots"></div>
                     <p class="hour">11:30–14:00, <br> 18:30–22:00</p>
                 </div>
-                <div class="day-description">
+                <div class="day-description reveal-3">
                     <p class="day">Mercredi</p>
                     <div class="dots"></div>
                     <p class="hour">11:30–14:00, <br> 18:30–22:00</p>
                 </div>
-                <div class="day-description">
+                <div class="day-description reveal-3">
                     <p class="day">Jeudi</p>
                     <div class="dots"></div>
                     <p class="hour">11:30–14:00, <br> 18:30–23:00</p>
                 </div>
-                <div class="day-description">
+                <div class="day-description reveal-3">
                     <p class="day">Vendredi</p>
                     <div class="dots"></div>
                     <p class="hour">11:30–14:00, <br> 18:30–23:00</p>
                 </div>
-                <div class="day-description">
+                <div class="day-description reveal-3">
                     <p class="day">Samedi</p>
                     <div class="dots"></div>
                     <p class="hour">18:30–23:00</p>
                 </div>
-                <div class="day-description">
+                <div class="day-description reveal-3">
                     <p class="day">Dimanche</p>
                     <div class="dots"></div>
                     <p class="hour">18:30–22:00</p>
