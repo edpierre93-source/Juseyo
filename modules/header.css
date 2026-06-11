@@ -1,8 +1,9 @@
-.header {
+header nav {
     height: 7rem;
     width: 100%;
     background-color: var(--primary);
     align-content: center;
+    z-index: 10;
 }
 
 .nav-bar {
@@ -14,9 +15,19 @@
     justify-content: space-between;
 }
 
+.sidebar-open {
+    display: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
 .logo {
     font-family: 'Reenie Beanie';
     font-size: 4.5rem;
+}
+
+.menu .logo-toggle {
+    display: none;
 }
 
 .nav-bar .nav-links {
@@ -64,3 +75,52 @@ svg {
     margin: 0 1rem;
 }
 
+@media (max-width: 780px) {
+
+    nav .sidebar-open {
+    display: block;
+    }
+
+    .menu {
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        left: -100%;
+        padding: 20px;
+        top: 0;
+        background: var(--secondary);
+        z-index: 10;
+        transition: all 0.4s ease;
+    }
+
+    .sidebar-open {
+        cursor: pointer;
+        display: none;
+    }
+
+    nav .active .menu {
+        left: 0%;
+    }
+
+    .menu .logo-toggle {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-toggle .sidebar-close {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .nav-bar .nav-links {
+        flex-direction: column;
+        padding-top: 60px;
+    }
+
+    .nav-links li a {
+        display: block;
+        margin-top: 30px;
+    }
+}
