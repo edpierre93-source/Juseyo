@@ -1,54 +1,57 @@
 .header {
-    background: var(--primary);
-    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: var(--primary);
+}
+
+.nav-bar {
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+    background-color: var(--primary);
+    margin: 0 auto;
+    padding: 0 30px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Reenie Beanie';
+    font-size: 4rem;
+}
+
+.nav-bar .nav-links {
+    display: flex;
     align-items: center;
 }
 
-.header-nav {
-    display: none;
-    align-items: flex-end;
-    text-transform: uppercase;
-    gap: 1rem;
-    font-weight: 700;
-    font-size: 0.88rem;
-    letter-spacing: 1px;
+.nav-bar .nav-links li {
+    margin: 0 1rem;
 }
 
-.header-right {
+.nav-links li a {
+    position: relative;
+    padding: 1rem;
+}
+
+.nav-icons {
     display: flex;
-    gap: 1rem;
+    align-items: center;
 }
 
-.header-right a, svg {
-    display: block;
-    width: 2rem;
-    height: 2rem;
-}
-
-@media (min-width: 900px) {
-    .header-nav {
-        font-size: 1.25rem;
-    }
-}
-
-@media (min-width: 600px) {
-    .header-nav {
-        display: flex;
-    }
-
-    .header .header-burger {
-        display: none;
-    }
-}
-
-@media (max-width: 375px) {
-    .header {
-        display: grid;
-        justify-content: center;
-        justify-items: center;
-        align-content: center;
-        align-items: center;
-    }
+.nav-icons .user,
+.nav-icons .bag,
+.nav-icons .burger {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    background-color: red;
 }
