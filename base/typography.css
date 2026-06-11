@@ -75,3 +75,7 @@
     font-weight: 700;
     color: var(--text-info);
 }
+
+.uppercase {
+    text-transform: uppercase;
+}
