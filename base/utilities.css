@@ -62,3 +62,7 @@
     transform: translateY(30px);
   }
 }
+
+.box-shadow {
+    box-shadow: black 0px 1px 6px 0px;
+}
