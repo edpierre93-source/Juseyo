@@ -5,13 +5,13 @@
 }
 
 .background-primary {
-    background-color: var(--primary);
+    background-color: var(--primary)!important
 }
 
 .background-secondary {
-    background-color: var(--secondary);
+    background-color: var(--secondary)!important
 }
 
 .background-light {
-    background-color: var(--back-light);
+    background-color: var(--back-light)!important
 }
