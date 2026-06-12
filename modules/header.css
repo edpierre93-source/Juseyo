@@ -1,7 +1,6 @@
 header nav {
     height: 7rem;
-    width: 100%;
-    background-color: var(--primary);
+    width: 100vh;
     align-content: center;
     z-index: 10;
 }
@@ -9,10 +8,11 @@ header nav {
 .nav-bar {
     background-color: var(--primary);
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
 }
 
 .sidebar-open {
@@ -45,10 +45,6 @@ header nav {
     padding: 1rem;
 }
 
-.nav-links li a:hover {
-    transform: translateY(20px);
-    transition: all 0.3s ease;
-}
 
 svg {
     width: 30px;
@@ -75,6 +71,12 @@ svg {
     margin: 0 1rem;
 }
 
+@media (min-width: 1000px) {
+    .nav-bar {
+        padding: 0 5rem;
+    }
+}
+
 @media (max-width: 780px) {
 
     nav .sidebar-open {
@@ -98,8 +100,8 @@ svg {
         display: none;
     }
 
-    nav .active .menu {
-        left: 0%;
+    nav.active .menu {
+        left: 0;
     }
 
     .menu .logo-toggle {
