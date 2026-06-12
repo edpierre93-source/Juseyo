@@ -13,7 +13,7 @@ header nav {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    box-shadow: black 0px 1px 6px 0px;
+    box-shadow: rgb(63, 63, 63) 0px 1px 6px 0px;
 }
 
 .sidebar-open {
@@ -103,6 +103,7 @@ svg {
 
     nav.active .menu {
         left: 0;
+        box-shadow: rgb(63, 63, 63) 1px 0px 5px 0px;
     }
 
     .menu .logo-toggle {
