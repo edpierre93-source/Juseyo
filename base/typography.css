@@ -59,7 +59,6 @@
 }
 
 .link-hover:hover {
-    color: var(--text-dark);
     transform: translatey(-2px);
     transition: linear 0.1s;
 }
@@ -74,4 +73,8 @@
 .under-price {
     font-weight: 700;
     color: var(--text-info);
+}
+
+.uppercase {
+    text-transform: uppercase;
 }

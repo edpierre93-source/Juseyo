@@ -1,54 +1,128 @@
-.header {
-    background: var(--primary);
-    padding: 1rem;
+header nav {
+    height: 7rem;
+    width: 100vh;
+    align-content: center;
+    z-index: 10;
+}
+
+.nav-bar {
+    background-color: var(--primary);
+    margin: 0 auto;
+    padding: 0 2rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    height: 100%;
+}
+
+.sidebar-open {
+    display: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.logo {
+    font-family: 'Reenie Beanie';
+    font-size: 4.5rem;
+}
+
+.menu .logo-toggle {
+    display: none;
+}
+
+.nav-bar .nav-links {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.nav-bar .nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links li a {
+    position: relative;
+    padding: 1rem;
+}
+
+
+svg {
+    width: 30px;
+    height: auto;
+}
+
+.icons a {
+    padding: 0 0.5rem;
+}
+
+.nav-icons {
+    display: flex;
     align-items: center;
 }
 
-.header-nav {
-    display: none;
-    align-items: flex-end;
-    text-transform: uppercase;
-    gap: 1rem;
-    font-weight: 700;
-    font-size: 0.88rem;
-    letter-spacing: 1px;
-}
-
-.header-right {
+.user,
+.bag,
+.burger {
+    height: 40px;
+    width: 40px;
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
 }
 
-.header-right a, svg {
+@media (min-width: 1000px) {
+    .nav-bar {
+        padding: 0 5rem;
+    }
+}
+
+@media (max-width: 780px) {
+
+    nav .sidebar-open {
     display: block;
-    width: 2rem;
-    height: 2rem;
-}
-
-@media (min-width: 900px) {
-    .header-nav {
-        font-size: 1.25rem;
-    }
-}
-
-@media (min-width: 600px) {
-    .header-nav {
-        display: flex;
     }
 
-    .header .header-burger {
+    .menu {
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        left: -100%;
+        padding: 20px;
+        top: 0;
+        background: var(--secondary);
+        z-index: 10;
+        transition: all 0.4s ease;
+    }
+
+    .sidebar-open {
+        cursor: pointer;
         display: none;
     }
-}
 
-@media (max-width: 375px) {
-    .header {
-        display: grid;
-        justify-content: center;
-        justify-items: center;
-        align-content: center;
+    nav.active .menu {
+        left: 0;
+    }
+
+    .menu .logo-toggle {
+        width: 100%;
+        display: flex;
         align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-toggle .sidebar-close {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .nav-bar .nav-links {
+        flex-direction: column;
+        padding-top: 60px;
+    }
+
+    .nav-links li a {
+        display: block;
+        margin-top: 30px;
     }
 }
